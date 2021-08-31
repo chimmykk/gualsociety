@@ -1,0 +1,580 @@
+:root{
+  --color-primary: #B4A18E;
+  --color-red: #9F2A30;
+  --color-darkred: #160A08;
+  --color-darkred-08: rgba(22, 10, 8, 0.8);
+  --color-dark: #1A1A1B;
+  --color-background: #1F222C;
+  --color-mint: #1F232D;
+}
+
+.traits {
+  background-color: var(--color-primary);
+}
+.roadmap {
+  background-color: var(--color-darkred);
+}
+.team {
+  background-color: var(--color-primary);
+}
+.faq {
+  background-color: var(--color-darkred);
+}
+.footer {
+  background-color: var(--color-primary);
+}
+
+hr{
+  color: var(--color-dark);
+  width: 500px ;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background) !important;
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #D9D9D9;
+  font-family: 'Montserrat';
+}
+p.subtitle {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+h1 {
+  font-family: 'Aclonica';
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 120%;
+  color: white;
+  text-align: center;
+}
+h2 {
+  font-family: 'Aclonica';
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  color: black;
+  text-align: center;
+}
+h3 {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 120%;
+  color: white;
+  text-align: center;
+}
+h4 {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  color: white;
+  text-align: center;
+}
+h5 {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  color: white;
+  text-align: center;
+}
+
+.navbar-brand img {
+  width: 170px;
+}
+
+button {
+  font-size: 16px;
+  line-height: 125%;
+  padding: 12px 28px;
+  background-color: var(--color-red);
+  color: white;
+}
+.btn-wallet {
+  font-size: 16px;
+  line-height: 125%;
+  padding: 12px 28px;
+  background-color: black;
+  color: white;
+  border-radius: 56px;
+  text-decoration: none;
+}
+.btn-wallet:hover {
+  color: white;
+}
+.btn-mint {
+  font-size: 50px;
+  line-height: 100%;
+  padding: 0px 15px;
+  background-color: var(--color-mint);
+  color: white;
+}
+.btn-mint:hover {
+  color: white;
+}
+.btn.btn-red {
+  font-size: 22px;
+  line-height: 100%;
+  font-family: 'Montserrat';
+  padding: 24px 48px;
+  background-color: var(--color-red);
+  color: white;
+  border-color: none;
+  border-radius: 56px;
+  text-decoration: none;
+}
+.btn-red {
+  color: white;
+}
+.btn.btn-primary {
+  background-color: var(--color-red);
+  background-size: 100% 100%;
+  font-weight: 500;
+  border: none;
+}
+
+.union {
+  margin-top: -10px;
+}
+
+/* navbar start */
+section.section-navbar {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+}
+body.offcanvas-active { overflow: hidden; }
+.offcanvas-header { display: none; }
+.screen-darken {
+	height: 100%;
+	width: 0%;
+	z-index: 30;
+	position: fixed;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	background-color: var(--color-darkred-08);
+	transition: opacity .2s linear, visibility 0.2s, width 2s ease-in;
+}
+.screen-darken.active {
+	z-index: 10;
+	transition: opacity .3s ease, width 0s;
+  opacity: 1;
+  width: 100%;
+  visibility: visible;
+}
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 18px;
+  line-height: 125%;
+  padding: 12px 28px;
+  font-family: 'Montserrat';
+  color: black;
+}
+
+/* faq start */
+h2.question {
+  font-family: 'Aclonica';
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 120%;
+  color:white;
+  text-align: center;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image:  url('../img/icon/plus.png');
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url('../img/icon/minus.png');
+  transform: rotate(
+-180deg
+);
+}
+/* faq end */
+
+/* traits start */
+h2.primary {
+  font-family: 'Aclonica';
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 120%;
+  color: var(--color-primary);
+  text-align: center;
+}
+/* traits end */
+
+img#roadmap-img {
+  margin-top: -1em;
+  width: 50%;
+}
+
+section.roadmap .title-bg {
+  margin: auto;
+  width: fit-content;
+  padding: 15px 75px;
+  background-image: url('../img/bg/bg-title-sm.png');
+  background-size: 100% 100%;
+}
+
+/* navbar mobile view */
+@media all and (max-width: 992px) {
+  img#roadmap-img {
+    width: 70%;
+    margin-top: 0.2em;
+  }
+  body {
+    width: 100%;
+  }
+  h1.mb-5 {
+    font-size: 2.4em;
+  }
+	.offcanvas-header {
+    display: block;
+    padding: 20px 0px 30px 30px;
+  }
+	.offcanvas-header .btn-close {
+    font-size: 30px;
+    color: black;
+    background: none;
+    padding: 0;
+    margin: 0;
+    width: unset;
+    height: unset;
+  }
+	.mobile-offcanvas {
+		visibility: hidden;
+		transform: translateX(-100%);
+    border-radius: 0;
+    display: block;
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    z-index: 1200;
+    width: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+    background-color: var(--color-primary);
+    padding: 0px 30px 30px 30px;
+	}
+	.mobile-offcanvas.show {
+		visibility: visible;
+    transform: translateX(0);
+	}
+	.mobile-offcanvas .container, .mobile-offcanvas .container-fluid {
+		display: block;
+	}
+  .navbar .btn-bars {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+}
+/* navbar end */
+
+/* hero start */
+section.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/bg/hero.png');
+  background-position: bottom center;
+  background-size: 800px 445.37px;
+  min-height: 1119px;
+  background-color: #101113;
+}
+section.hero .container {
+  margin-top: -325px;
+}
+section.hero h1 {
+  margin: auto;
+  text-align: center;
+}
+section.hero p {
+  margin: auto;
+  text-align: center;
+}
+section.hero .box-btn-hero {
+  margin: auto;
+  text-align: center;
+}
+/* hero end */
+
+/* survival start */
+section.survival {
+  background-color: #131417;
+  padding-bottom: 100px;
+}
+section.survival .title-bg {
+  margin: auto;
+  width: fit-content;
+  padding: 15px 75px;
+  background-image: url('../img/bg/bg-title-lg.png');
+  background-size: 100% 100%;
+}
+section.survival .subtitle {
+  margin: auto;
+  max-width: 830px;
+  color: #FEFEFF;
+}
+section.survival .item-potrait {
+  padding: 60px;
+  background-color: var(--color-darkred);
+  text-align: center;
+}
+section.survival .name-potrait {
+  font-family: 'Aclonica';
+  font-size: 28px;
+  line-height: 120%;
+  color: white;
+}
+section.survival .slick-potrait img {
+  margin: auto;
+}
+/* survival end */
+
+/* Traits  */
+section.traits .title-bg {
+  margin: auto;
+  width: fit-content;
+  padding: 15px 75px;
+  background-image: url('../img/bg/bg-title-sm-dark.png');
+  background-size: 100% 100%;
+}
+/* */
+
+/* mint star */
+section.mint {
+  padding: 100px 0px;
+  background-color: var(--color-darkred);
+}
+section.mint .title-bg {
+  margin: auto;
+  width: fit-content;
+  padding: 15px 75px;
+  background-image: url('../img/bg/bg-title-sm.png');
+  background-size: 100% 100%;
+}
+/* mint end */
+
+/* team start */
+section.team {
+  background-color: var(--color-primary);
+}
+section.team .title-bg {
+  margin: auto;
+  width: fit-content;
+  padding: 15px 75px;
+  background-image: url('../img/bg/bg-title-sm-dark.png');
+  background-size: 100% 100%;
+}
+section.team .team-frame {
+  width: fit-content;
+  background-color: var(--color-darkred);
+  box-shadow: 27px 33.8321px 50px rgba(18, 20, 29, 0.25);
+  padding: 2rem;
+  margin: auto;
+}
+section.team .team-pic {
+  background-color: var(--color-red);
+  margin-bottom: 20px;
+}
+section.team .team-frame h3 {
+  font-family: 'Aclonica';
+  margin-bottom: 5px;
+  line-height: 100%;
+}
+section.team .team-frame p.small {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FEFEFF;
+  margin-bottom: 10px;
+}
+section.team .team-frame p.position {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FEFEFF;
+  margin-bottom: 0;
+}
+/* team end */
+
+/* faq start */
+section.faq {
+  background-color: var(--color-darkred);
+}
+section.faq h2.question {
+  font-family: 'Aclonica';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: left;
+  color:white;
+}
+.accordion-button {
+  padding: 2rem 2rem;
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image:  url('../img/icon/plus.png');
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .2s ease-in-out;
+}
+.accordion-button:not(.collapsed)::after {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-image: url('../img/icon/minus.png');
+  transform: rotate(-180deg);
+}
+.accordion-button:not(.collapsed) {
+  color:white;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+section.faq .title-bg {
+  margin: auto;
+  width: fit-content;
+  padding: 15px 75px;
+  background-image: url('../img/bg/bg-title-sm.png');
+  background-size: 100% 100%;
+}
+section.faq .accordion-collapse{
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+.accordion-item {
+  background-color: var(--color-dark);
+  margin-bottom: 30px;
+}
+.accordion-button {
+  color: white;
+  background-color: var(--color-dark);
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-dark);
+}
+/* faq end */
+
+.amount {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 200%;
+  color: white;
+  text-align: center;
+}
+.team-pic{
+  background-color: var(--color-red);
+  padding: 0px 0px 0px 0px;
+  margin-bottom: 42px ;
+  margin-top: 20px;
+}
+.team-frame{
+  background-color: var(--color-darkred);
+  margin: 1rem;
+}
+.title {
+  position: relative;
+  top: 120px;
+  z-index: 1;
+}
+.sign {
+  position: relative;
+  top: 0px;
+  z-index: 0;
+}
+.accordion-item {
+  background-color: var(--color-dark);
+  margin-bottom: 30px;
+}
+.accordion-button {
+  color: white;
+  background-color: var(--color-dark);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-dark);
+}
+@media (min-width: 992px) {
+  /* navbar */
+  section.section-navbar {
+    width: 100%;
+  }
+  .navbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  /* hero */
+  section.hero {
+    background-position: bottom center;
+    background-size: 2010px 1119px;
+    min-height: 1119px;
+  }
+  section.hero .container {
+    margin-top: -325px;
+  }
+  section.hero h1 {
+    margin: unset;
+    text-align: left;
+    max-width: 600px;
+  }
+  section.hero p {
+    margin: unset;
+    text-align: left;
+    max-width: 400px;
+  }
+  section.hero .box-btn-hero {
+    margin: unset;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
